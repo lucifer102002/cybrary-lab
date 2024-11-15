@@ -1,0 +1,37 @@
+touch file1.txt file2.txt file3.txt
+ls
+echo "This is file 1" >> file1.txt
+cat file1.txt
+file file1.txt
+echo "This is file 2" >> file2.txt
+echo "This is file 3" >> file3.txt
+cat file2.txt file3.txt
+mkdir red blue green
+ls
+cp file1.txt blue/
+ls -R
+rm -i file1.txt
+ls -R
+mv file2.txt green
+ls -R
+mv file3.txt happypumpkin.moo
+ls -R
+cat happypumpkin.moo
+mv happypumpkin.moo red/file3.txt
+ls -R
+base64 /dev/urandom | head -c 1M > abigfile.txt
+ls -la
+more abigfile.txt
+less abigfile.txt
+find / -name "more" 2>/dev/null
+find . -name "*.txt"
+grep -r "This"
+cd /home/cybrary
+cat unsorted
+cat unsorted | sort
+cat unsorted | sort | uniq
+cat unsorted | wc
+cat unsorted | wc -w
+cat unsorted | sort | uniq | wc -w
+cd Desktop
+./flag.sh
